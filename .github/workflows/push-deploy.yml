@@ -15,6 +15,9 @@ jobs:
       if: "! github.event.release.prerelease"
       id: deploy
       uses: faisal-alvi/action-wordpress-plugin-deploy@develop
+      with:
+        generate-zip: true
+        dry-run: true
       env:
         SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
         SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
