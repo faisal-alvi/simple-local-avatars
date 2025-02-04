@@ -39,4 +39,4 @@ jobs:
         run: npm run build
 
       - name: Generate ZIP file
-        uses: 10up/action-wordpress-plugin-build-zip@stable
+        uses: 10up/action-wordpress-plugin-build-zip@fix/install-svn
